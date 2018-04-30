@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+  David Kay
+  Mississippi Department of Education
+  Office of Technology and Strategic Services
+  dkay@mdek12.org
+-->
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MRCS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+</head>
+<body>
+  <section class="hero is-primary is-fullheight is-bold">
+    <div class="hero-head">
+      <nav class="navbar is-shadowless" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item is-size-3" href="index.html">MRCS</a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="state.html">State Data</a>
+              <a class="navbar-item">About Us</a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Pages</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item has-text-dark" href="school.html">School</a>
+                  <a class="navbar-item has-text-dark" href="district.html">District</a>
+                  <a class="navbar-item has-text-dark" href="details.html">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="hero-body">
+      <div class="container">
+        <p class="title is-size-1">Welcome to the Mississippi Report Cards</p>
+        <p class="subtitle is-size-3">Start searching for schools and districts below</p>
+        <span id="element" class="title"></span>
+        <div class="columns">
+          <div class="column is-two-thirds">
+            <div class="field">
+              <div class="control">
+                <input class="input" type="text" placeholder="Just start typing">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-foot">
+      <div class="container has-text-centered"><p class="is-size-3"><i class="fa fa-angle-double-down"></i> Scroll down for more <i class="fa fa-angle-double-down"></i></p></div>
+    </div>
+  </section>
+  <section class="lower">
+    <div class="container">
+      <p class="title has-text-centered">State Data</p>
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column">
+          <div class="card">
+            <header class="card-header-title is-centered">
+              State Score
+            </header>
+            <div class="card-content is-size-1">
+              B
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="buttons">
+            <a class="button is-medium is-primary">
+              <span class="icon is-medium">
+                <i class="fa fa-file-pdf"></i>
+              </span>
+              <span>Download Executive Summary</span>
+            </a>
+            <a class="button is-medium is-primary">
+              <span class="icon is-medium">
+                <i class="fa fa-file-excel"></i>
+              </span>
+              <span>Download Full Data</span>
+            </a>
+            <a class="button is-medium is-primary">
+              <span class="icon is-medium">
+                <i class="fa fa-chart-line"></i>
+              </span>
+              <span>See State Data</span>
+            </a>
+          </div>
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+  </section>
+  
+  
+</body>
+</html>
+
+
+<!-- scripts -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typeit@5.9.0/dist/typeit.min.js">
+  var instance = new TypeIt('#element', {
+    strings: ['This is my string!'],
+    //-- Other options...
+  });
+</script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
